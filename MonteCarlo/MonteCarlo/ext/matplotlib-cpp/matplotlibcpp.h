@@ -287,7 +287,7 @@ namespace matplotlibcpp {
 		Py_DECREF(kwargs);
 		if(res) Py_DECREF(res);
 
-		return res != nullptr;
+		return res == nullptr;
 	}
 
 	template< typename Numeric >
@@ -394,7 +394,7 @@ namespace matplotlibcpp {
 		Py_DECREF(plot_args);
 		if(res) Py_DECREF(res);
 
-		return res != nullptr;
+		return res == nullptr;
 	}
 
 	template<typename NumericX, typename NumericY>
@@ -475,7 +475,7 @@ namespace matplotlibcpp {
 		Py_DECREF(plot_args);
 		if(res) Py_DECREF(res);
 
-		return res != nullptr;
+		return res == nullptr;
 	}
 
 	template<typename Numeric>
